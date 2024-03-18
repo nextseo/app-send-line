@@ -6,11 +6,11 @@ export async function POST(request) {
     const data = await request.json();
     const LINE_NOTIFY_TOKEN = "QKAyMnPM7Zkmz2xTb178S6ilrvBtuUa9LZDwv12EBtP";
     const message2 = `
-    test_1 = ${data.data_1 || ""} 
-    test_2 = ${data.data_2 || ""} 
-    test_3 = ${data.data_3 || 0} 
-    test_4 = ${data.data_4 || ""} 
-    test_5 = ${data.data_5 || ""} 
+    DO Number = ${data.data_1 || ""} 
+    รายการสินค้า = ${data.data_2 || ""} 
+    จำนวนสินค้าที่คืน = ${data.data_3 || 0} 
+    ปัญหาของการแจ้งคืน = ${data.data_4 || ""} 
+    Remake = ${data.data_5 || ""} 
     `;
 
     const response = await axios.post(
